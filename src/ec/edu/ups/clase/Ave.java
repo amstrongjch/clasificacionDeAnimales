@@ -11,6 +11,15 @@ import ec.edu.ups.clase2.Acciones;
  *
  * @author Ordenador
  */
-public class Ave implements Acciones{
+public class Ave extends Animales implements Acciones{
+
+    public Ave(String animal, int edad, double peso, String sexo) {
+        super(animal, edad, peso, sexo);
+    }
+
+    @Override
+    public void comer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }

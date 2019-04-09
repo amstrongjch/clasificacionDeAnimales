@@ -13,9 +13,7 @@ import ec.edu.ups.clase2.Acciones;
  */
 public class Perro extends Animales implements Acciones{
 
-    public Perro(String animal, int edad, double peso, String sexo) {
-        super(animal, edad, peso, sexo);
-    }
+    
     
     @override
     public void comer(){
@@ -36,11 +34,9 @@ public class Perro extends Animales implements Acciones{
     }
     @override
     public void reproducirse(){
-        System.out.println("el perro"+ this.getNombre()+"ellos se reproducen");;
+        System.out.println("el perro"+ this.getNombre()+"ellos se reproducen");
     }
 
-    private String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
 }
